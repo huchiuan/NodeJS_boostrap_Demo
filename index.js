@@ -33,7 +33,7 @@ app.get('/r/:subreddit',(req,res)=>{
 })
 app.get('/rand',(req,res) => {
     const num = Math.floor(Math.random() *10000 )+1;
-    res.render('random',{num:num})
+    res.render('random',{num, title : 'random'})
 })
 app.listen(3000,()=>{
 console.log ("Listen port 3000");
